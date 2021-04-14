@@ -5,6 +5,7 @@ public class Employee {
 	private String name;
 	private String address;
 	private PaymentClassification paymentClassification;
+	private PaymentMethod paymentMethod;
 	public Employee() {
 		
 	}
@@ -38,6 +39,13 @@ public class Employee {
 	public void setPaymentClassification(PaymentClassification paymentClassification) {
 		this.paymentClassification = paymentClassification;
 	}
+	public PaymentMethod getPaymentMethod() {
+		return paymentMethod;
+	}
+	public void setPaymentMethod(PaymentMethod paymentMethod) {
+		this.paymentMethod = paymentMethod;
+	}
+	
 	
 	
 }
