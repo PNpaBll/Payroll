@@ -1,5 +1,6 @@
 package payroll.trans;
 
+import payroll.Employee;
 import payroll.Transaction;
 
 public class AddHourlyEmployeeTransaction implements Transaction {
@@ -20,7 +21,8 @@ public class AddHourlyEmployeeTransaction implements Transaction {
 	public void execute() {
 		//新建雇员
 		Employee employee=new Employee(empId,name,address);
-		
+		//设置工资计算方式
+		employee.setPaymentClassification(new HourlyClassification(hourlyRate));
 		
 		
 		
