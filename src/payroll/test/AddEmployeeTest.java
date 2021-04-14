@@ -7,7 +7,7 @@ import org.junit.Test;
 public class AddEmployeeTest {
 
 	@Test
-	public void testAddHourlyEmployeeTransactio() {
+	public void test() {
 		fail("Not yet implemented");
 	}
 
