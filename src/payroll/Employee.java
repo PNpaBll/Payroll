@@ -8,6 +8,7 @@ public class Employee {
 	public Employee(){
 		
 	}
+	private PaymentClassification paymentClassification;
 	public Employee(int empId, String name, String address) {
 		super();
 		this.empId = empId;
@@ -33,4 +34,15 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public PaymentClassification getPaymentClassification() {
+		return paymentClassification;
+	}
+
+	public void setPaymentClassification(PaymentClassification paymentClassification) {
+		this.paymentClassification = paymentClassification;
+	}
+
+	
+	
 }
