@@ -7,8 +7,12 @@ import org.junit.Test;
 public class AddEmployeeTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testAddHourlyEmployeeTransaction() {
+		int empId=1001;
+		String name="Bill";
+		String address="Home";
+		double  hourlyRate=12.5;
+		
 	}
 
 }
