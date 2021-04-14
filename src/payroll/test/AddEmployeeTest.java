@@ -21,6 +21,11 @@ public class AddEmployeeTest {
 		assertEquals(empId,e.getEmpId());
 		assertEquals(name,e.getName());
 		assertEquals(address,e.getAddress());
+		PaymentClassification pc=e.getPaymentClassification();
+		assertTrue(pc instanceof HourlyClassification);//钟点工
+		HourlyClassification hc=(HourlyClassification)pc;
+		assertEquals(hourlyRate,hc.getHourlyRate(),0.01);//小时工资
+		
 	}
 
 }
