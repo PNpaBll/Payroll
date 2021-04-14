@@ -4,6 +4,9 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
+	public Employee() {
+		
+	}
 	public Employee(int empId, String name, String address) {
 		super();
 		this.empId = empId;
