@@ -18,7 +18,11 @@ public class AddHourlyEmployeeTransaction implements Transaction {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		//ÐÂ½¨¹ÍÔ±
+		Employee employee=new Employee(empId,name,address);
+		
+		
+		
 		
 	}
 
