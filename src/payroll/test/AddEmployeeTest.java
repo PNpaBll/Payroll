@@ -25,7 +25,8 @@ public class AddEmployeeTest {
 		assertTrue(pc instanceof HourlyClassification);//钟点工
 		HourlyClassification hc=(HourlyClassification)pc;
 		assertEquals(hourlyRate,hc.getHourlyRate(),0.01);//小时工资
-		
+		PaymentMethod pm=e.getPaymentMethod();
+		assertTrue(pm instanceof HoldMethod);//支付方式默认为保存支票
 	}
 
 }
