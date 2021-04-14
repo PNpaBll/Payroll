@@ -4,6 +4,12 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
+	public Employee(int empId, String name, String address) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.address = address;
+	}
 	public int getEmpId() {
 		return empId;
 	}
