@@ -17,7 +17,10 @@ public class AddEmployeeTest {
 		t.execute();
 		//验证执行结果
 		Employee e=PayrollDatabase.getEmployee(empId)//根据雇员编号读取雇员记录
-				
+		assertNotNull(e);//雇员记录存在
+		assertEquals(empId,e.getEmpId());
+		assertEquals(name,e.getName());
+		assertEquals(address,e.getAddress());
 	}
 
 }
