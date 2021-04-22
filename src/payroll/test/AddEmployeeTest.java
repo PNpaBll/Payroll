@@ -52,7 +52,9 @@ public class AddEmployeeTest {
 		assertEquals(name,e.getName());
 		assertEquals(address,e.getAddress());
 		PaymentClassification pc=e.getPaymentClassification();
-		assertTrue(pc instanceof SalariedClassification);//中点工
+		assertTrue(pc instanceof SalariedClassification);//月薪方式
+		SalariedClassification sc=(SalariedClassification)pc;
+		assertEquals(salary,sc.getSalary(),0.01);//月薪正确
 		
 	}
 
