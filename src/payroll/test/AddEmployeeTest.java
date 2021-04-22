@@ -48,6 +48,9 @@ public class AddEmployeeTest {
 		
 		Employee e=PayrollDatabase.getEmployee(empId);//根据雇员编号读取雇员记录
 		assertNotNull(e);//雇员存在
+		
+		assertEquals(name,e.getName());
+		
 	}
 
 }
