@@ -22,6 +22,7 @@ public class AddSalariedEmployeeTransaction implements Transaction {
 	public void execute() {
 		Employee employee=new Employee(empId,name,address);
 		employee.setPaymentClassification(new SalariedClassification(salary));
+		employee.setPaymentMethod(new HoldMethod());
 		
 	}
 
