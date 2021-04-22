@@ -41,6 +41,8 @@ public class AddEmployeeTest {
 	public void testAddSalariedEmployeeTransaction() {
 		int empId=1002;
 		String name="Bill";
+		String address="Home";
+		double salary=2410.0;
 	}
 
 }
