@@ -55,7 +55,8 @@ public class AddEmployeeTest {
 		assertTrue(pc instanceof SalariedClassification);//月薪方式
 		SalariedClassification sc=(SalariedClassification)pc;
 		assertEquals(salary,sc.getSalary(),0.01);//月薪正确
-		
+		PaymentMethod pn=e.getPaymentMethod();
+		assertTrue(pn instanceof HoldMethod);//支付方式
 	}
 
 }
