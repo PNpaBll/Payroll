@@ -4,17 +4,18 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
-	private PaymentClassification paymentClassification;
-	private PaymentMethod paymentMethod;
-	public Employee() {
+	
+	public Employee(){
 		
 	}
+	private PaymentClassification paymentClassification;
 	public Employee(int empId, String name, String address) {
 		super();
 		this.empId = empId;
 		this.name = name;
 		this.address = address;
 	}
+	
 	public int getEmpId() {
 		return empId;
 	}
@@ -33,19 +34,15 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	public PaymentClassification getPaymentClassification() {
 		return paymentClassification;
 	}
+
 	public void setPaymentClassification(PaymentClassification paymentClassification) {
 		this.paymentClassification = paymentClassification;
 	}
-	public PaymentMethod getPaymentMethod() {
-		return paymentMethod;
-	}
-	public void setPaymentMethod(PaymentMethod paymentMethod) {
-		this.paymentMethod = paymentMethod;
-	}
-	
+
 	
 	
 }
