@@ -1,6 +1,7 @@
 package payroll.trans;
 
 import payroll.Employee;
+import payroll.PayrollDatabase;
 import payroll.Transaction;
 
 public class AddSalariedEmployeeTransaction implements Transaction {
@@ -23,7 +24,7 @@ public class AddSalariedEmployeeTransaction implements Transaction {
 		Employee employee=new Employee(empId,name,address);
 		employee.setPaymentClassification(new SalariedClassification(salary));
 		employee.setPaymentMethod(new HoldMethod());
-		
+		PayrollDatabase.save(employee);
 	}
 
 }
