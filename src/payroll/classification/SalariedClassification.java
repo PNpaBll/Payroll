@@ -13,7 +13,7 @@ public class SalariedClassification extends PaymentClassification {
 
 	public double getSalary() {
 		// TODO Auto-generated method stub
-		return 0;
+		return salary;
 	}
 
 }
