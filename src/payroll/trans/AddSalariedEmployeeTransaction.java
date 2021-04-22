@@ -19,7 +19,7 @@ public class AddSalariedEmployeeTransaction implements Transaction {
 
 	@Override
 	public void execute() {
-		// TODO Auto-generated method stub
+		Employee employee=new Employee(empId,name,address);
 
 	}
 
