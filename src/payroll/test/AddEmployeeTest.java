@@ -45,6 +45,9 @@ public class AddEmployeeTest {
 		double salary=2410.0;
 		Transaction t=new AddSalariedEmployeeTransaction(empId,name,address,salary);
 		t.execute();
+		
+		Employee e=PayrollDatabase.getEmployee(empId);//根据雇员编号读取雇员记录
+		
 	}
 
 }
