@@ -39,7 +39,8 @@ public class AddEmployeeTest {
 	}
 	@Test
 	public void testAddSalariedEmployeeTransaction() {
-		
+		int empId=1002;
+		String name="Bill";
 	}
 
 }
