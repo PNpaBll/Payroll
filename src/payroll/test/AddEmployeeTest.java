@@ -50,7 +50,7 @@ public class AddEmployeeTest {
 		assertNotNull(e);//¹ÍÔ±´æÔÚ
 		
 		assertEquals(name,e.getName());
-		
+		assertEquals(address,e.getAddress());
 	}
 
 }
