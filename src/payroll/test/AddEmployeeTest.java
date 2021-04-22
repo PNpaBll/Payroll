@@ -43,6 +43,8 @@ public class AddEmployeeTest {
 		String name="Bill";
 		String address="Home";
 		double salary=2410.0;
+		Transaction t=new AddSalariedEmployeeTransaction(empId,name,address,salary);
+		t.execute();
 	}
 
 }
