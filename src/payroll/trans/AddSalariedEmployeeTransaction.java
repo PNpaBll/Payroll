@@ -1,5 +1,6 @@
 package payroll.trans;
 
+import payroll.Employee;
 import payroll.Transaction;
 
 public class AddSalariedEmployeeTransaction implements Transaction {
@@ -20,7 +21,8 @@ public class AddSalariedEmployeeTransaction implements Transaction {
 	@Override
 	public void execute() {
 		Employee employee=new Employee(empId,name,address);
-
+		employee.setPaymentClassification(new SalariedClassification(salary));
+		
 	}
 
 }
