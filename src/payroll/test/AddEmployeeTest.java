@@ -51,6 +51,9 @@ public class AddEmployeeTest {
 		
 		assertEquals(name,e.getName());
 		assertEquals(address,e.getAddress());
+		PaymentClassification pc=e.getPaymentClassification();
+		assertTrue(pc instanceof SalariedClassification);//�е㹤
+		
 	}
 
 }
