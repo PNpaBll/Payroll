@@ -15,7 +15,7 @@ public class AddCommissionedEmployeeTransaction extends AddEmployeeTransaction {
 	@Override
 	protected PaymentClassification getPaymentClassification() {
 		// TODO Auto-generated method stub
-		return null;
+		return newCommissionedClassification(salary,commissionRate);
 	}
 
 }
