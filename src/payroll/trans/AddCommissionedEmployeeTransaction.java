@@ -6,7 +6,7 @@ public class AddCommissionedEmployeeTransaction extends AddEmployeeTransaction {
 
 	public AddCommissionedEmployeeTransaction(int empId, String name, String address, double salary,
 			double commissionRate) {
-		// TODO Auto-generated constructor stub
+		super(empId,name,address);
 	}
 
 	@Override
